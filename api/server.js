@@ -1,9 +1,9 @@
 require('dotenv').config
 const express = require('express');
-const cors = require('cores')
+const cors = require('cors')
 const helmet = require('helmet');
 
-const apiRouter = require('./api/api-router.js');
+const apiRouter = require('./api-router.js');
 
 const server = express();
 
