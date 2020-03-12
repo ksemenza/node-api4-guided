@@ -1,6 +1,6 @@
 require('dotenv').config
 const express = require('express');
-const cors = require('cors')
+
 const helmet = require('helmet');
 
 const apiRouter = require('./api-router.js');
@@ -8,7 +8,7 @@ const apiRouter = require('./api-router.js');
 const server = express();
 
 server.use(helmet());
-server.use(cors())
+
 
 
 function logger(req, res, next) {
