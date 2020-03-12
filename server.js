@@ -1,4 +1,4 @@
-require('dotenv').config
+
 const express = require('express');
 
 const helmet = require('helmet');
@@ -17,12 +17,14 @@ function logger(req, res, next) {
     );
     next();
 }
-
-
 server.use(logger);
 server.use('/api', apiRouter);
+
 server.get('/', (req, res) => {
     res.send('Welcome to the Thunder Dome');
 });
+
+
+
 
 module.exports = server;
