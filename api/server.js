@@ -21,7 +21,7 @@ server.use(logger);
 server.use('/api', apiRouter);
 
 server.get('/', (req, res) => {
-    res.send('Welcome to the Thunder Dome');
+    res.send('THIS IS MY HOUSE!');
 });
 
 
